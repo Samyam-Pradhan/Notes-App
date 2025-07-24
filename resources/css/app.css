@@ -1,0 +1,94 @@
+/* Container for all notes */
+.note-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* New Note button */
+.new-note-btn {
+  display: inline-block;
+  background-color: #2563eb; /* Tailwind Blue-600 */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.new-note-btn:hover {
+  background-color: #1e40af; /* Tailwind Blue-800 */
+}
+
+/* Container holding all individual notes */
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Each individual note card */
+.note {
+  background-color: #f9fafb; /* Light gray */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  transition: box-shadow 0.3s ease;
+}
+
+.note:hover {
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+/* The main text content inside the note */
+.note-body {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Buttons container inside each note */
+.note-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Style for View, Edit, Delete buttons */
+.note-edit-button {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: #e0e7ff; /* Tailwind Indigo-100 */
+  border-radius: 6px;
+  color: #4338ca; /* Tailwind Indigo-700 */
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.note-edit-button:hover {
+  background-color: #6366f1; /* Tailwind Indigo-500 */
+  color: white;
+}
+
+/* Optional: styling for Delete button if you want it red */
+.note-buttons a:last-child {
+  background-color: #fee2e2; /* Tailwind Red-100 */
+  color: #b91c1c; /* Tailwind Red-700 */
+}
+
+.note-buttons a:last-child:hover {
+  background-color: #dc2626; /* Tailwind Red-600 */
+  color: white;
+}
