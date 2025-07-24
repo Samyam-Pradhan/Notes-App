@@ -22,6 +22,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
             'password'=> bcrypt('pass123'),
         ]);
-        Note::factory()->create(100);
+       Note::factory()->count(100)->create();
     }
 }
