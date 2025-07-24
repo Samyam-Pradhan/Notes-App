@@ -2,6 +2,8 @@
    <div class="note-contanier">
       <h1>Edit your notes</h1>
       <form action="{{route('note.update', $note)}}" method="post" class="note">
+         @csrf
+         @method('PUT')
          <textarea name="note" rows="10" class="note-body" placeholder="Enter your notes here">
             {{$note->note}}
          </textarea>
