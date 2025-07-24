@@ -9,6 +9,11 @@
 
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+        @session('message')
+        <div class="sucess-message">
+            {{session('message')}}
+        </div>
+        @endsession
        {{$slot}}
     </body>
 </html>
