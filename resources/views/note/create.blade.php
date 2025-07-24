@@ -1,3 +1,3 @@
-<div>
-    <!-- An unexamined life is not worth living. - Socrates -->
-</div>
+<x-layout>
+    <h2>create</h2>
+</x-layout>
